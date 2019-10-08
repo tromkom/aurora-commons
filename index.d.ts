@@ -1,1 +1,1 @@
-export { useMemoize, withMemoize } from "./components/Memoize";
+export * from "./components/Memoize";
