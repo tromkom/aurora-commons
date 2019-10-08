@@ -11,5 +11,16 @@
   "bugs": {
     "url": "https://github.com/tromkom/aurora-commons/issues"
   },
-  "homepage": "https://github.com/tromkom/aurora-commons#readme"
+  "homepage": "https://github.com/tromkom/aurora-commons#readme",
+  "devDependencies": {
+    "react": "^16.10.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
 }
