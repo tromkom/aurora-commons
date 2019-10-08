@@ -80,7 +80,7 @@ export const useMemoize = (component, ignoreFunctions = true) => {
   ]);
 };
 
-const Memoize = ({ component, ...props }) => {
+export const Memoize = ({ component, ...props }) => {
   const Component = useMemoize(component);
   return <Component {...props} />;
 };
