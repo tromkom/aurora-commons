@@ -1,5 +1,6 @@
-import UserHeader from './components/UserHeader';
+import { useMemoize, withMemoize } from "./components/Memoize";
 
 export default {
-  UserHeader: UserHeader
-}
+  useMemoize,
+  withMemoize
+};

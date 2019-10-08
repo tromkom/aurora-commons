@@ -70,7 +70,7 @@ const arePropsSame = (ignoreFunctions, prev, next) => {
   return true;
 };
 
-const withMemoize = (component, ignoreFunctions = true) => {
+export const withMemoize = (component, ignoreFunctions = true) => {
   return React.memo(component, arePropsSame.bind(null, ignoreFunctions));
 };
 
@@ -79,5 +79,3 @@ export const useMemoize = (component, ignoreFunctions = true) => {
     component
   ]);
 };
-
-export default withMemoize;
