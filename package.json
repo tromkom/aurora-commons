@@ -1,3 +1,15 @@
 {
-  "main": "index.js" 
+  "name": "aurora-commons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tromkom/aurora-commons.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/tromkom/aurora-commons/issues"
+  },
+  "homepage": "https://github.com/tromkom/aurora-commons#readme"
 }
