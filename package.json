@@ -11,11 +11,10 @@
     "url": "https://github.com/tromkom/aurora-commons/issues"
   },
   "homepage": "https://github.com/tromkom/aurora-commons#readme",
-  "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
-    "dist",
-    "types"
+    "src"
   ],
   "babel": {
     "extends": "./configs/.babelrc"
