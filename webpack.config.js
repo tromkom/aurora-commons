@@ -1,5 +1,7 @@
+const webpack = require("webpack");
+
 module.exports = {
-  entry: "./index.js",
+  entry: ["babel-polyfill", "./index.js"],
   module: {
     rules: [
       {
@@ -17,7 +19,10 @@ module.exports = {
     publicPath: "/",
     filename: "bundle.js"
   },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: "./dist"
+    contentBase: ".",
+    hot: true,
+    disableHostCheck: true
   }
 };
