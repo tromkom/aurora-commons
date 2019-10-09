@@ -32,7 +32,7 @@ const arePropsSame = (ignoreFunctions, prev, next) => {
           */
           throw new Error("Symbol not implemented");
         }
-        break;
+        return arePropsSame(ignoreFunctions, prev.props, next.props);
       }
 
       case "function": {
