@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { withMemoize } from "../src/components/Memoize";
+import { withMemoize } from "../src";
 
 const Input = ({ value, onChange, name }) => {
   console.log("rendered:", name);

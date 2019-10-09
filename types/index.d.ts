@@ -1,1 +1,1 @@
-export * from "./Memoize";
+export * from "./components/Memorize";

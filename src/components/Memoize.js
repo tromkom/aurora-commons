@@ -24,10 +24,12 @@ const arePropsSame = (ignoreFunctions, prev, next) => {
     switch (typeof value) {
       case "symbol": {
         if (key !== "$$typeof") {
+          /*
           console.debug("------------------------");
           console.debug(prev);
           console.debug(next);
           console.debug(key);
+          */
           throw new Error("Symbol not implemented");
         }
         break;
