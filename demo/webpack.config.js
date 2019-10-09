@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 
 module.exports = {
-  entry: ["babel-polyfill", "./index.js"],
+  entry: ["babel-polyfill", "./demo/demo.js"],
   module: {
     rules: [
       {
@@ -21,7 +21,7 @@ module.exports = {
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: ".",
+    contentBase: "./demo",
     hot: true,
     disableHostCheck: true
   }
