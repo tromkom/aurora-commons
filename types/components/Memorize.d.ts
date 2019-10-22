@@ -1,16 +1,17 @@
 import * as React from "react";
 
 export function withMemoize(
-  component: React.Component,
+  component: React.ElementType,
   ignoreFunctions?: Boolean
 ): React.Component;
 
 export function useMemoize(
-  component: React.Component,
+  component: React.ElementType,
   ignoreFunctions?: Boolean
 ): React.Component;
 
 export function Memoize(
-  component: React.Component,
+  component: React.ElementType,
+  ignorefunctions: Boolean,
   props?: any
 ): React.Component;
