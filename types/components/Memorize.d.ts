@@ -10,8 +10,10 @@ export function useMemoize(
   ignoreFunctions?: Boolean
 ): React.Component;
 
-export function Memoize(
-  component: React.ElementType,
-  ignorefunctions: Boolean,
-  props?: any
-): React.Component;
+interface MemoizeProps {
+  component: React.ElementType;
+  ignoreFunctions?: boolean;
+  props?: object;
+}
+
+export declare const Memoize: React.ComponentType<MemoizeProps>;
