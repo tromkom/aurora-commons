@@ -7,6 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Memoize = exports.useMemoize = exports.withMemoize = void 0;
 
+var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
+
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutProperties"));
 
 var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
@@ -121,9 +123,11 @@ exports.useMemoize = useMemoize;
 
 var Memoize = function Memoize(_ref) {
   var component = _ref.component,
-      props = (0, _objectWithoutProperties2["default"])(_ref, ["component"]);
-  var Component = useMemoize(component);
-  return _react["default"].createElement(Component, props);
+      _ref$ignoreFunctions = _ref.ignoreFunctions,
+      ignoreFunctions = _ref$ignoreFunctions === void 0 ? true : _ref$ignoreFunctions,
+      props = (0, _objectWithoutProperties2["default"])(_ref, ["component", "ignoreFunctions"]);
+  var Component = useMemoize(component, ignoreFunctions);
+  return _react["default"].createElement(Component, (0, _objectSpread2["default"])({}, props, props.props || {}));
 };
 
 exports.Memoize = Memoize;
